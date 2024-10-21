@@ -1,0 +1,448 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+
+/* Navbar Styles */
+header {
+    background: linear-gradient(135deg, #1e90ff, #00bfff);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: static;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between items */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px; /* Inner space */
+    border-radius: 5px; /* Soft corners */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Hover background effect */
+    transform: scale(1.05); /* Hover enlarge effect */
+}
+
+/* Section Styles */
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Animasi Fade */
+.fade-in {
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+#home {
+    background: linear-gradient(to right, #1e90ff, #87cefa);
+    color: white;
+    padding: 4rem 2rem;
+}
+
+#home h2 {
+    font-size: 2.5rem;
+}
+
+#home p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    background-color: white;
+    color: #1e90ff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #f4f4f4;
+}
+
+/* Card Styles for Services Section */
+.area {
+    margin-bottom: 3rem;
+}
+
+.area h1 {
+    margin-bottom: 1rem;
+    color: #1e90ff;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    margin-bottom: 0.5rem;
+    color: #1e90ff;
+}
+
+.card p {
+    margin-bottom: 0.5rem;
+    color: black;
+}
+
+.btn-buy {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #1e90ff;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn-buy:hover {
+    background-color: #1c7ed6;
+}
+
+/* Tentang Kami Section */
+#about {
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+.about-text {
+    max-width: 600px;
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    color: #222;
+    margin-bottom: 1rem;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.about-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    max-width: 400px;
+    text-align: center;
+}
+
+.stat-item h3 {
+    font-size: 2.5rem;
+    color: #1e90ff;
+    margin-bottom: 0.5rem;
+}
+
+.stat-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Penawaran yang Kami Berikan Section */
+#penawaran {
+    padding: 4rem 2rem;
+    background-color: #fff;
+}
+
+.penawaran-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+.penawaran-text {
+    max-width: 600px;
+}
+
+.penawaran-text h2 {
+    font-size: 1.5rem;
+    color: #222;
+    margin-bottom: 1rem;
+}
+
+.penawaran-text h3 {
+    font-size: 1.3rem;
+    color: #1e90ff;
+    margin-bottom: 1.5rem;
+}
+
+.penawaran-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.penawaran-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.penawaran-item img {
+    width: 48px;
+    height: 48px;
+}
+
+.penawaran-item h4 {
+    font-size: 1.1rem;
+    color: #1e90ff;
+    margin-bottom: 0.5rem;
+}
+
+.penawaran-item p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.penawaran-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #1e90ff;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .about-container,
+    .penawaran-container {
+        flex-direction: column; /* Stack sections vertically */
+        align-items: center; /* Center content */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack nav items vertically */
+        align-items: center; /* Center items */
+    }
+
+    nav ul li {
+        margin-bottom: 10px; /* Space between nav items */
+    }
+
+    .card-container {
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center; /* Center cards */
+    }
+
+    .about-stats {
+        grid-template-columns: 1fr; /* Single column for stats */
+    }
+    
+    /* Responsive adjustments for headings and paragraphs */
+    #home h2 {
+        font-size: 2rem; /* Adjust heading size */
+    }
+
+    #home p {
+        font-size: 1rem; /* Adjust paragraph size */
+    }
+
+    .about-text h2 {
+        font-size: 2rem; /* Adjust heading size */
+    }
+
+    .penawaran-text h2 {
+        font-size: 1.2rem; /* Adjust heading size */
+    }
+
+    .penawaran-text h3 {
+        font-size: 1.1rem; /* Adjust heading size */
+    }
+
+    .penawaran-item {
+        flex-direction: column; /* Stack image and text */
+        align-items: center; /* Center items */
+    }
+
+    .btn-buy {
+        width: 100%; /* Make button full width */
+        padding: 0.75rem; /* Adjust padding */
+    }
+}
+
+/* Tambahkan ke dalam CSS kamu */
+.fade-in {
+    opacity: 1;
+    transition: opacity 0.5s ease-in; /* Transisi memudar masuk */
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease-out; /* Transisi memudar keluar */
+}
+
+section {
+    opacity: 0; /* Mulai dengan tidak terlihat */
+}
+
+
+/* Hubungi Kami Section */
+.contact-section {
+    background: linear-gradient(to right, #1e90ff, #87cefa);
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact-container p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    resize: none; /* Disable resizing */
+    height: 150px; /* Fixed height for textarea */
+}
+
+.cta-button {
+    background-color: white;
+    color: #1e90ff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #f4f4f4;
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Social Icons */
+.social-icons {
+    margin-top: 2rem;
+    display: flex; /* Flexbox untuk ikon */
+    justify-content: center; /* Pusatkan ikon */
+}
+
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block; /* Agar ikon dapat ditekan */
+    transition: transform 0.3s; /* Animasi transformasi */
+}
+
+.social-icons img {
+    width: 40px; /* Ukuran ikon */
+    transition: transform 0.3s; /* Transisi untuk efek hover */
+}
+
+.social-icons a:hover img {
+    transform: scale(1.2); /* Membesar saat hover */
+}
+
+/* Responsiveness untuk ikon media sosial */
+@media (max-width: 768px) {
+    .social-icons img {
+        width: 30px; /* Ukuran ikon yang lebih kecil di perangkat mobile */
+    }
+}
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px; /* Jarak dari bawah */
+    right: 20px; /* Jarak dari kanan */
+    width: 60px; /* Lebar tombol */
+    height: 60px; /* Tinggi tombol */
+    border-radius: 50%; /* Membuat tombol bulat */
+    background-color: #25D366; /* Warna latar belakang WhatsApp */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Efek bayangan */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s; /* Animasi saat hover */
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.1); /* Membesar saat hover */
+}
+
+.whatsapp-button img {
+    width: 30px; /* Ukuran ikon */
+    height: 30px; /* Ukuran ikon */
+}
